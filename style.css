@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* nav */
+.dropdown-item img{
+    height: 40px;
+}
+
+.dropdown-item span{
+    margin-left: 10px;
+}
+
+.box-item{
+
+    display: flex;
+    align-items: center;
+}
+
+/* header */
+header{
+    background-image: url(imagens/bg_header2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+}
+
+.box-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.header-texto{
+    width: 50%;
+    /* border: 1px solid red; */
+    font-size: 45px;
+    border-left: 3px solid black;
+    padding-left: 10px;
+    margin-left: 20px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+/* main */
+/* section-sobre */
+#sobre{
+    margin: 50px 20px 30px 20px;
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.sobre-texto{
+    padding: 30px 30px 10px 30px;
+}
+
+.sobre-texto p{
+    text-indent: 25px;
+}
+
+.sobre-foto img{
+    border-radius: 50% ;
+    width: 90%;
+    margin: 0 5% 5% 5%;
+}
+
+
+/* section-estudo */
+#estudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-estudo{
+    background-color: whitesmoke;
+    width: 90%;
+    height: 350px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+.box-estudo img{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+.box-estudo ul{
+    display: none;
+    margin-left: 10%;
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.box-estudo ul li{
+    font-size: 1.2em;
+}
+
+.box-estudo:hover img{
+    display: none;
+}
+
+.box-estudo:hover ul{
+    display: inline-block;
+}
+
+
+/* footer */
+.box-icones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icone i{
+    font-size: 1.4em;
+}
