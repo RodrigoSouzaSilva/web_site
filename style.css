@@ -124,8 +124,13 @@ header{
     width: 80vw;
     margin: 0 auto;
 }
+
 .carousel-item img{
     width: 100%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(100%);
 }
 
 /* footer */
