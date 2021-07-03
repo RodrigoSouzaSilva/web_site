@@ -128,6 +128,7 @@ header{
 
 .carousel-item img{
     width: 100%;
+    height: 70vh;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
