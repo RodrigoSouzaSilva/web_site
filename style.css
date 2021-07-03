@@ -19,11 +19,12 @@ body{
     margin-left: 10px;
 }
 
-.box-item{
 
+.box-item{
     display: flex;
     align-items: center;
 }
+
 
 /* header */
 header{
