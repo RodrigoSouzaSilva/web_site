@@ -119,6 +119,15 @@ header{
 }
 
 
+/* section-certificados */
+#certificados{
+    width: 80vw;
+    margin: 0 auto;
+}
+.carousel-item img{
+    width: 100%;
+}
+
 /* footer */
 .box-icones{
     display: flex;
