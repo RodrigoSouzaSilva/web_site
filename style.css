@@ -44,8 +44,7 @@ header{
 
 .header-texto{
     width: 50%;
-    /* border: 1px solid red; */
-    font-size: 45px;
+    font-size: 70px;
     border-left: 3px solid black;
     padding-left: 10px;
     margin-left: 20px;
@@ -75,8 +74,10 @@ header{
 
 .sobre-foto img{
     border-radius: 50% ;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 5% 5% 5%;
+    height: 400px;
+    width: 300px;
 }
 
 
@@ -86,6 +87,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
 .box-estudo{
     background-color: whitesmoke;
     width: 90vw;
@@ -145,4 +147,59 @@ header{
 
 .icone i{
     font-size: 1.4em;
+}
+
+
+/* media queries TABLETS */
+@media (min-width:768px){
+    .header-texto{
+        font-size: 90px;
+    }
+
+    #sobre{
+        margin: 50px 20px 30px 20px;
+        display: flex;
+        flex-direction: row;
+        background-color: whitesmoke;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .sobre-texto{
+        order: 1;
+        width: 60vw;
+    }
+
+    .sobre-foto{
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+    }
+
+    #estudo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-estudo{
+        width: 25vw;
+        background-color: whitesmoke;
+        border-radius: 50px;
+        margin-right: 15px;
+    }
+
+    .box-estudo ul{
+        font-size: 1em;
+    }
+}
+
+
+/* media queries DESKTOP */
+@media (min-width:1024px){
+    .carousel-item img{
+        width: 100%;
+        height: 70vh;
+    }
 }
