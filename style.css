@@ -145,8 +145,22 @@ header{
     justify-content: space-around;
 }
 
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    font-size: 30px;
+}
+
 .icone i{
     font-size: 1.4em;
+}
+
+.icon-texto{
+    margin-left: 10px;
 }
 
 
