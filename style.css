@@ -55,8 +55,11 @@ header{
 
 /* main */
 /* section-sobre */
+
+
 #sobre{
-    margin: 50px 20px 30px 20px;
+    margin: 0 5%;
+    
     display: flex;
     background-color: whitesmoke;
     flex-direction: column;
