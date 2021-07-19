@@ -43,14 +43,15 @@ header{
 }
 
 .header-texto{
-    width: 50%;
+    width: 60%;
     font-size: 60px;
     border-left: 3px solid black;
     padding-left: 10px;
     margin-left: 20px;
     color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: monospace;
     text-transform: uppercase;
+    
 }
 
 /* main */
@@ -170,7 +171,7 @@ header{
 /* media queries TABLETS */
 @media (min-width:768px){
     .header-texto{
-        font-size: 90px;
+        font-size: 70px;
     }
 
     #sobre{
