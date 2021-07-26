@@ -198,74 +198,98 @@ section{											/* area section */
 }
 
 
-@media(max-width: 499px) {
+ @media (max-width:300px){          /* telas pequenas */
+	.titulo p{												
+		border-left: 1px solid var(--primaria);
+		padding-left: 10px;
+		color: var(--primaria);
+		font-size: 1.4em;
+		text-indent: 25px;
+		text-transform: uppercase;
+	}
+
 	.box-sobre{
-		display: flex;
-		flex-direction: column;	
-		align-items: center;					
+		display: flex;	
+		flex-direction: column;					
 	}
 
 	.foto{
-		width: 100%;							
-		order: 1;
+		width: 100%;
+		order: 1;							/* area foto sobre */
 	}
 	
-	.foto img{								
+	.foto img{								/* imagem sobre */
 		width: 100%;
 		border-radius: 50%;
-		margin-top: 10px;
 	}
 	
-	.texto{										
+	.texto{										/* area texto sobre */
 		width: 100%;
-		padding: 20px;
 	}
 
-	.box div ul{
-		font-size: .8em;
-		
-	}
-
-}
-
-@media(min-width: 500px){
-	.box-sobre{
-		display: flex;
-		flex-direction: column;	
-		align-items: center;					
-	}
-
-	.foto{
-		width: 100%;							
-		order: 1;
-	}
-	
-	.foto img{								
-		width: 100%;
-		border-radius: 50%;
-		margin-top: 10px;
-	}
-	
-	.texto{										
-		width: 100%;
-		padding: 20px;
-	}
-
-	.titulo p{
-		font-size: 1.2em;
+	.box div ul{										/* area da ul dos box */
+		display: none;
+		background-color: var(--primaria);
+		height: 100%;
+		font-size: .6em;
 	}
 
 	ol.carousel-indicators{
 		display: none;
 	}
 
-	.box-contatos a span{
-		font-size: .7em;
+	.box-icone span{							/* texto icone */	
+		color: var(--secundaria);
+		padding-left: 5px;
+		font-size: .6em;
 	}
 
-	.box div ul{
-		font-size: 1em;
-		
+}
+
+@media (min-width:301px) and (max-width:500px){          /* telas media */
+	.titulo p{												
+		border-left: 1px solid var(--primaria);
+		padding-left: 10px;
+		color: var(--primaria);
+		font-size: 1.4em;
+		text-indent: 25px;
+		text-transform: uppercase;
+	}
+
+	.box-sobre{
+		display: flex;	
+		flex-direction: column;					
+	}
+
+	.foto{
+		width: 100%;
+		order: 1;							/* area foto sobre */
+	}
+	
+	.foto img{								/* imagem sobre */
+		width: 100%;
+		border-radius: 50%;
+	}
+	
+	.texto{										/* area texto sobre */
+		width: 100%;
+	}
+
+	.box div ul{										/* area da ul dos box */
+		display: none;
+		background-color: var(--primaria);
+		height: 100%;
+		font-size: .8em;
+	}
+
+	ol.carousel-indicators{
+		display: none;
+	}
+
+	.box-icone span{							/* texto icone */	
+		color: var(--secundaria);
+		padding-left: 5px;
+		font-size: .8em;
 	}
 
 }
