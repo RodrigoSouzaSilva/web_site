@@ -107,7 +107,7 @@ section{											/* area section */
 	width: 250px;
 	height: 250px;
 	margin: 0 15px 15px 0;
-	background-color: var(--fundo-branco);
+	background-color: var(--fundo-gelo);
 	border-radius: 15px;
 }
 
@@ -173,7 +173,7 @@ section{											/* area section */
 .box-icone{ 								/* area de icone */
 	display: flex;
 	align-items: center;
-	background-color: var(--fundo-branco);
+	background-color: var(--fundo-gelo);
 	padding: 10px;
 	border-radius: 15px;
 }
