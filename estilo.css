@@ -227,7 +227,7 @@ section{											/* area section */
 
 }
 
-@media(max-width: 410px){
+@media(max-width: 500px){
 	.box-sobre{
 		display: flex;
 		flex-direction: column;	
