@@ -1,0 +1,265 @@
+:root{
+	--primaria: #00afff;
+	--secundaria: rgb(0, 0, 0);
+	--fundo-gelo: whitesmoke;
+	--fundo-branco: #fff;
+	--ponteiro: rgb(194, 207, 7);
+
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.body{
+	font-family: monospace;
+	background-color: var(--secundaria);
+}
+
+/* Navbar */											
+.navbar{											/*area navbar*/
+	height: 10vh;
+	background-color:var(--secundaria);
+	
+}
+
+.navbar-toggler-icon i{								/* icone navbar */
+	color: var(--primaria);
+	font-size: 28px;
+	
+}
+
+#navegacao ul li a{									/* links navbar*/
+	color: var(--primaria);
+}
+
+a.navbar-brand img{									/* icone logo */
+	height: 8vh;
+	
+}
+
+a.dropdown-item img{								/* logo submenu */
+	height: 30px;
+}
+
+/* Header */
+header{													/* area header*/
+	height: 90vh;
+	background-image: url(imagens/logo_grande.png);
+	background-size: 100% 100%;
+	background-color: var(--secundaria);
+	
+}
+
+/* Main */
+section{											/* area section */
+	background-color: var(--fundo-branco);
+	border-radius: 15px;
+	padding: 20px;
+	width: 80vw;
+	margin: 0 auto;
+	margin: 10vh auto;
+}
+
+/* Section Sobre */
+.titulo p{												/* titulo das sections */
+	border-left: 1px solid var(--primaria);
+	padding-left: 10px;
+	color: var(--primaria);
+	font-size: 2em;
+	text-indent: 25px;
+	text-transform: uppercase;
+}
+
+.box-sobre{
+	display: flex;						/* area section sobre */
+}
+
+.foto{
+	width: 30%;							/* area foto sobre */
+	
+}
+
+.foto img{								/* imagem sobre */
+	width: 100%;
+	border-radius: 50%;
+	margin-top: 80px;
+}
+
+.texto{										/* area texto sobre */
+	width: 70%;
+	padding: 20px;
+}
+
+
+/* Section estudos */
+.box{												/* campo estudos e portfolio */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.box div{ 											/* box individual estudos e portfolio */
+	width: 250px;
+	height: 250px;
+	margin: 0 15px 15px 0;
+	background-color: var(--fundo-branco);
+	border-radius: 15px;
+}
+
+.box div img{
+	width: 100%;							/* tamanho imgagem dentro dos box*/
+}
+
+.box div ul{										/* area da ul dos box */
+	display: none;
+	background-color: var(--primaria);
+	height: 100%;
+}
+
+.box div:hover img{									/* retirando a imagem */
+	display: none;
+}
+
+.box div:hover ul{						
+	animation: 2s;
+	display: block;
+	padding: 10px 30px;
+	border-radius: 15px;
+}
+
+/* Section Certificados */
+.box-certificado{							/* area certificado*/
+	height: 60vh;
+	margin: 0 auto;
+}
+
+.carousel-item img{								/*imagem certificados*/
+	width: 100%;
+	height: 60vh;
+}
+
+.carousel-indicators i{							/* icones indicadores */
+	font-size: 40px;
+	margin-right: 10px;
+	cursor: pointer;
+	color:var(--primaria);
+}
+
+.carousel-indicators i.active{					/* indicadores ativos */
+	color: var(--ponteiro);
+}
+
+
+.carousel-control-prev i, .carousel-control-next i{  /* item pre e pos  */
+	font-size: 40px;
+	margin-right: 10px;
+	cursor: pointer;
+	color:var(--primaria);
+}
+
+
+/* Section contatos */
+.box-contatos{							/* area de contatos */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.box-icone{ 								/* area de icone */
+	display: flex;
+	align-items: center;
+	background-color: var(--fundo-branco);
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.box-icone i{								/*icone tamanho*/	
+	font-size: 40px;
+}
+
+.box-icone span{							/* texto icone */	
+	color: var(--secundaria);
+	padding-left: 5px;
+	font-size: 1.3em;
+}
+
+.box-contatos a, .box-contatos a span{  	
+	color: var(--primaria);
+}
+
+.box-contatos a:hover, .box-contatos a:hover span{
+	color: var(--fundo-branco);
+	background-color: var(--primaria);
+	text-decoration: none;
+}
+
+
+@media(max-width: 300px){
+	.box-sobre{
+		display: flex;
+		flex-direction: column;	
+		align-items: center;					
+	}
+
+	.foto{
+		width: 100%;							
+		order: 1;
+	}
+	
+	.foto img{								
+		width: 100%;
+		border-radius: 50%;
+		margin-top: 10px;
+	}
+	
+	.texto{										
+		width: 100%;
+		padding: 20px;
+	}
+
+	.box div ul{
+		font-size: .8em;
+	}
+
+}
+
+@media(max-width: 410px){
+	.box-sobre{
+		display: flex;
+		flex-direction: column;	
+		align-items: center;					
+	}
+
+	.foto{
+		width: 100%;							
+		order: 1;
+	}
+	
+	.foto img{								
+		width: 100%;
+		border-radius: 50%;
+		margin-top: 10px;
+	}
+	
+	.texto{										
+		width: 100%;
+		padding: 20px;
+	}
+
+	.titulo p{
+		font-size: 1.2em;
+	}
+
+	ol.carousel-indicators{
+		display: none;
+	}
+
+	.box-contatos a span{
+		font-size: .7em;
+	}
+
+}
