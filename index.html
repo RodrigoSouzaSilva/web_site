@@ -15,6 +15,10 @@
 	<!-- JS -->
 	<script src="main.js"></script>
 
+	<!-- Scroll animado -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -25,9 +29,9 @@
 </head>
 <body class="body">
 
-	<nav class="navbar navbar-expand-sm">
+	<nav id="home" class="navbar navbar-expand-sm">
 		<!-- logo -->
-		<a class="navbar-brand" href=""><img src="imagens/logo_pequena.png" alt=""></a>
+		<a class="navbar-brand" href="#home"><img src="imagens/logo_pequena.png" alt="rodrigo desenvolvedor"></a>
 
 		<!-- Menu Hamburguer -->
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
@@ -39,35 +43,35 @@
 		<!-- navegação -->
 		<div class="collapse navbar-collapse" id="navegacao">
 			<ul class="navbar-nav ml-auto ">
-				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
 
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown">Estudos</a>
 
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/HTML_5">
-							<img src="imagens/logo_html.png" alt="">
+						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/Cursos/tree/main/Udemy/Desenvolvimento_web_2021/HTML_5">
+							<img src="imagens/logo_html.png" alt="img html">
 							Html
 						</a>
-						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/CSS_3">
-							<img src="imagens/logo_css.png" alt="">
+						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/Cursos/tree/main/Udemy/Desenvolvimento_web_2021/CSS_3">
+							<img src="imagens/logo_css.png" alt="img css">
 							Css
 						</a>
-						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/JavaScript">
-							<img src="imagens/logo_js.png" alt="">
+						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/Cursos/tree/main/Udemy/Desenvolvimento_web_2021/JavaScript">
+							<img src="imagens/logo_js.png" alt="img javascript">
 							JavaScript
 						</a>
 						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/Cursos/tree/main/Udemy/Desenvolvimento_web_2021/bootstrap">
-							<img src="imagens/logo_boot.png" alt="">
+							<img src="imagens/logo_boot.png" alt="img bootstrap">
 							Bootstrap
 						</a>
 						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva/Cursos/tree/main/Udemy/Desenvolvimento_web_2021/MySQL">
-							<img src="imagens/logo_mysql.png" alt="">
+							<img src="imagens/logo_mysql.png" alt="img mysql">
 							MySql
 						</a>
 						<a class="dropdown-item" href="https://github.com/RodrigoSouzaSilva">
-							<img src="imagens/logo_github.png" alt="https://github.com/RodrigoSouzaSilva">
+							<img src="imagens/logo_github.png" alt="img github">
 							GitHub
 						</a>
 					</div>
@@ -83,17 +87,17 @@
 	</header>
 
 	<main>
-		<section id="sobre">
+		<section id="sobre" data-aos="fade-up">
 			<div class="titulo">
 				<p>
 					Sobre
 				</p>
 			</div>
 			<div class="box-sobre">
-				<div class="foto">
+				<div class="foto" data-aos="fade-up">
 					<img src="imagens/foto1_web.png" alt="">
 				</div>
-				<div class="texto">
+				<div class="texto" data-aos="fade-left">
 					<h3>Olá visitante,</h3>
 					<p>
 						Olá me chamo Rodrigo de Souza, moro no Rio de Janeiro-RJ, tive meu primeiro contato com o mundo de desenvolvimento ainda no ensino médio, e de lá para cá sempre tive a curiosidade de aprender mais e descobrir como tudo acontecia.
@@ -114,14 +118,14 @@
 			</div>
 		</section>
 
-		<section id="estudos">
+		<section id="estudos" data-aos="fade-up">
 			<div class="titulo">
 				<p>
 					Estudos
 				</p>
 			</div>
 			<div class="box">
-				<div>
+				<div data-aos="fade-up">
 					<img src="imagens/logo_html.png" alt="">
 					<ul>
 						<li>Estrutura de página Web</li>
@@ -135,7 +139,7 @@
 						<li>Entre outros...</li>
 					</ul>
 				</div>
-				<div>
+				<div data-aos="fade-up">
 					<img src="imagens/logo_css.png" alt="">
 					<ul>
 						<li>Posição estatico e relativo</li>
@@ -148,7 +152,7 @@
 						<li>Entre outros...</li>
 					</ul>
 				</div>
-				<div>
+				<div data-aos="fade-up">
 					<img src="imagens/logo_js.png" alt="">
 					<ul>
 						<li>Estrutura de repetição</li>
@@ -162,7 +166,7 @@
 						<li>Entre outros...</li>
 					</ul>
 				</div>
-				<div>
+				<div data-aos="fade-up">
 					<img src="imagens/logo_boot.png" alt="">
 					<ul>
 						<li>Barra de navegação</li>
@@ -176,7 +180,7 @@
 						<li>Entre outros...</li>
 					</ul>
 				</div>
-				<div>
+				<div data-aos="fade-up">
 					<img src="imagens/logo_mysql.png" alt="">
 					<ul>
 						<li>Plataforma de análise TABLEAU</li>
@@ -188,7 +192,7 @@
 						<li>JOINS</li>                
 					</ul>
 				</div>
-				<div>
+				<div data-aos="fade-up">
 					<img src="imagens/logo_github.png" alt="">
 					<ul>
 						<li>Todos os conteúdos</li>
@@ -201,7 +205,7 @@
 			</div>
 		</section>
 
-		<!-- <section id="portfolio">
+		<!-- <section id="portfolio" data-aos="fade-up">
 			<div class="titulo">
 				<p>
 					Portfólio
@@ -215,7 +219,7 @@
 			</div>
 		</section> -->
 
-		<section id="certificados">
+		<section id="certificados" data-aos="fade-up">
 			<div class="titulo">
 				<p>
 					Certificados
@@ -268,7 +272,7 @@
 			</div>
 		</section>
 
-		<section id="contatos">
+		<section id="contatos" data-aos="fade-up">
 			<div class="titulo">
 				<p>
 					Contatos
@@ -302,6 +306,14 @@
 			
 	</footer>
 	
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init({
+		duration: 1000,
+	});
+	</script>  
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>

@@ -48,11 +48,12 @@ a.dropdown-item img{								/* logo submenu */
 
 /* Header */
 .header{
-	height: 90vh;
+	height: 100vh;
 	width: 80vw;
 	margin: 0 auto;
 	background-image: url(imagens/molde2_grande.png);
 	background-size: 100% 100%;
+	/* background-attachment: fixed; */
 }
 
 /* Main */
