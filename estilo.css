@@ -340,6 +340,10 @@ footer{
 		font-size: .8em;
 	}
 
+	.box ul li{
+		font-weight: bold;
+	}
+
 	ol.carousel-indicators{
 		display: none;
 	}
